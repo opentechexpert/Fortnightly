@@ -5,8 +5,15 @@
 /*  Typography */
 // To change your theme's typography, we recommend importing a font from Google Fonts and setting the global font-family https://fonts.google.com
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
 $mdc-typography-font-family: unquote("Montserrat, sans-serif");
+$mdc-typography-styles-button: (
+ font-size: 14px,
+ font-weight: bold,
+);
+$mdc-typography-styles-headline6: (
+ font-size: 20px,
+);
 
 
 /* Shape */
@@ -29,7 +36,7 @@ $mdc-theme-secondary: #018786;
 // Theme background ($mdc-theme-background) appears behind scrollable content. Surface color ($mdc-theme-surface) is mapped to the surface of components such as cards, sheets, and menus. Error color ($mdc-theme-error) is used to indicate an error state for components such as text fields provided with inaccurate input.
 
 // $mdc-theme-surface: #ffffff;
-// $mdc-theme-background: #ffffff;
+$mdc-theme-background: #fce4ec;
 // $mdc-theme-error: #b00020;
 
 
