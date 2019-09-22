@@ -1,5 +1,5 @@
 dependencies:
-  '@material/button': 3.2.0
+  '@material/button': 0.41.0
   '@material/card': 0.41.0
   '@material/chips': 0.41.0
   '@material/layout-grid': 0.41.0
@@ -31,34 +31,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-yYAwJbX3Q2AFd4dr6IYOsWLQy2HN8zWOFVl9AbUXunjzTfJCa/ecfXCriaT6qkmoNoHeTdJHRrsQJZC5GsPvzA==
-  /@material/animation/3.1.0:
-    dependencies:
-      tslib: 1.10.0
-    dev: false
-    resolution:
-      integrity: sha512-ZfP95awrPBLhpaCTPNx+xKYPp2D88fzf5p5YNVp6diUAGRpq3g12Aq7qJfIHDXAFo5CtrYhgOKRqIKxUVcFisQ==
   /@material/base/0.41.0:
     dev: false
     resolution:
       integrity: sha512-tEyzwBRu3d1H120SfKsDVYZHcqT5lKohh/7cWKR93aAaPDkSvjpKJIjyu2yuSkjpDduVZGzVocYbOvhUKhhzXQ==
-  /@material/base/3.1.0:
+  /@material/button/0.41.0:
     dependencies:
-      tslib: 1.10.0
+      '@material/elevation': 0.41.0
+      '@material/ripple': 0.41.0
+      '@material/rtl': 0.40.1
+      '@material/shape': 0.41.0
+      '@material/theme': 0.41.0
+      '@material/typography': 0.41.0
     dev: false
     resolution:
-      integrity: sha512-pWEBHyPrMV3rdnjqWWH96h5t3MxQI6V1J9jOor+UBG7bXQtr6InTabTqhz5CLY7r+qZU8YvNh2OKIy8heP0cyQ==
-  /@material/button/3.2.0:
-    dependencies:
-      '@material/elevation': 3.1.0
-      '@material/feature-targeting': 3.1.0
-      '@material/ripple': 3.2.0
-      '@material/rtl': 3.2.0
-      '@material/shape': 3.1.0
-      '@material/theme': 3.1.0
-      '@material/typography': 3.1.0
-    dev: false
-    resolution:
-      integrity: sha512-VEASy3Dtc7BCo8/cuUIp6w0+/l4U1myGZffK5GeFVInP/erStSQOmYXT7jGXkZpUglRzWOpVvEpc6nsvhMqGbw==
+      integrity: sha512-9mA/7P8yD3YPJ8ijwu0oOiT65OCa8Km3M9OF6VAsBE+XJS9Wo5hWDMgkv16raeOFeXj+1ALsjvuTz31JdcSkgQ==
   /@material/card/0.41.0:
     dependencies:
       '@material/elevation': 0.41.0
@@ -97,12 +84,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-wOJrMwjPddYXpQFZAIaCLWI3TO/6KU1lxESTBzunni8A4FHQVWhokml5Xt85GqZwmPFeIF2s+D0wfbWyrGBuKQ==
-  /@material/dom/3.1.0:
-    dependencies:
-      tslib: 1.10.0
-    dev: false
-    resolution:
-      integrity: sha512-RtBLSkrBjMfHwknaGBifAIC8cBWF9pXjz2IYqfI2braB6SfQI4vhdJviwyiA5BmA/psn3cKpBUZbHI0ym0O0SQ==
   /@material/elevation/0.41.0:
     dependencies:
       '@material/animation': 0.41.0
@@ -110,18 +91,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ZtZS8z5ie9c7Cx5PVudgSorGYa0C3lu3dA+Nn6qJdhGUokl01msh54NfNuwk+EZsk65bNRRqw1Td/63TCbKIzg==
-  /@material/elevation/3.1.0:
-    dependencies:
-      '@material/animation': 3.1.0
-      '@material/feature-targeting': 3.1.0
-      '@material/theme': 3.1.0
-    dev: false
-    resolution:
-      integrity: sha512-e45LqiG6LfbR1M52YkSLA7pQPeYJOuOVzLp27xy2072TnLuJexMxhEaG4O1novEIjsTtMjqfrfJ/koODU5vEew==
-  /@material/feature-targeting/3.1.0:
-    dev: false
-    resolution:
-      integrity: sha512-aXAa1Pv6w32URacE9LfMsl9zI6hFwx1K0Lp3Xpyf4rAkmaAB6z0gOkhicOrVFc0f64YheJgHjE7hJFieVenQdw==
   /@material/floating-label/0.41.0:
     dependencies:
       '@material/animation': 0.41.0
@@ -195,25 +164,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rxEUVWM4AByDlTCH0kkthZQmUuY6eeN0X6cOHBoioFN2vUDk0D0Nfzz/N9FF2AlAf8C2lDDLrTuqnJPVIn+NHA==
-  /@material/ripple/3.2.0:
-    dependencies:
-      '@material/animation': 3.1.0
-      '@material/base': 3.1.0
-      '@material/dom': 3.1.0
-      '@material/feature-targeting': 3.1.0
-      '@material/theme': 3.1.0
-      tslib: 1.10.0
-    dev: false
-    resolution:
-      integrity: sha512-GtwkfNakALmfGLs6TpdFIVeAWjRqbyT7WfEw9aU7elUokABfHES+O0KoSKQSMQiSQ8Vjl90MONzNsN1Evi/1YQ==
   /@material/rtl/0.40.1:
     dev: false
     resolution:
       integrity: sha512-Pk6Iw1/KrhWZoZtkDsPMDUW0bm7Z1zeXb3MTQRCFmjf1wU5cRxgOTtuoZLcJqlcKGppLAzJL/TJV3E7KEiuL0A==
-  /@material/rtl/3.2.0:
-    dev: false
-    resolution:
-      integrity: sha512-L/w9m9Yx1ceOw/VjEfeJoqD4rW9QP3IBb9MamXAg3qUi/zsztoXD/FUw179pxkLn4huFFNlVYZ4Y1y6BpM0PMA==
   /@material/select/0.41.0:
     dependencies:
       '@material/animation': 0.41.0
@@ -241,12 +195,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-k1K3CjOVxclfb/0r28cOa2oJpP7QMA2fP0SOS3Vh8ale5Q2jkaHTL60KX8VkHvV6rMqShpXW+60gPjoz5XRbDQ==
-  /@material/shape/3.1.0:
-    dependencies:
-      '@material/feature-targeting': 3.1.0
-    dev: false
-    resolution:
-      integrity: sha512-Oyvs7YjHfByA0e9IVVp7ojAlPwgSu3Bl0cioiE0OdkidkAaNu0izM2ryRzMBDH5o8+lRD0kpZoT+9CVVCdaYIg==
   /@material/tab-bar/0.41.0:
     dependencies:
       '@material/base': 0.41.0
@@ -302,12 +250,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ohW2JxObKOWvP34EkIIcrEVtL3g0Gs/T3/MdOsM36euyshY8Jwl1f6fjVUQvVjSpixUtSb30/+ulblF8fTOwBg==
-  /@material/theme/3.1.0:
-    dependencies:
-      '@material/feature-targeting': 3.1.0
-    dev: false
-    resolution:
-      integrity: sha512-N4JX+akOwg1faAvFvIEhDcwW4cZfUpwEn8lct6Vs3WczjLF6/KdIoLVaYh+eVl1bzfsoIuWvx56j0B1PjXZw9g==
   /@material/top-app-bar/0.41.0:
     dependencies:
       '@material/animation': 0.41.0
@@ -325,12 +267,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-15dlqSU+9uGcWdg4KXXcmDzTKJPb7/5Z9kmooONb2Laot1uiuntDXQS0yL+U2FYLW5Ros+WVMosDBKFruWx68A==
-  /@material/typography/3.1.0:
-    dependencies:
-      '@material/feature-targeting': 3.1.0
-    dev: false
-    resolution:
-      integrity: sha512-aSNBQvVxIH1kORSYdLGuSTivx6oJ1MSOSTUAsUwhXPQLQlvbdFeZaqUp7xgn+EvRsHGRFhWk5YGuiBds9+7zQg==
   /abbrev/1.1.1:
     dev: true
     resolution:
@@ -5179,10 +5115,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-m6s2OdQe5wgpFMC+pAJ+q9djG82O2jcHPOI6RNg1yy9rCYR+WD6Nbpl32fDpfC56nirdRy+opFa/Vk7HYhqaew==
-  /tslib/1.10.0:
-    dev: false
-    resolution:
-      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
   /tty-browserify/0.0.0:
     dev: true
     resolution:
@@ -5622,7 +5554,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@material/button': ^3.2.0
+  '@material/button': ^0.41.0
   '@material/card': ^0.41.0
   '@material/chips': ^0.41.0
   '@material/layout-grid': ^0.41.0
