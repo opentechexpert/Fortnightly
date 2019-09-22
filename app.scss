@@ -1,14 +1,17 @@
 // Material Theming
-$mdc-theme-primary: #880e4f;
-$mdc-typography-font-family: unquote("Montserrat, sans-serif");
-$mdc-typography-styles-button: (
- font-size: 14px,
- font-weight: bold,
-);
-$mdc-typography-styles-headline6: (
- font-size: 20px,
-);
-$mdc-shape-small-component-radius: 16px;
+//$mdc-theme-primary: #880e4f;
+//$mdc-typography-font-family: unquote("Montserrat, sans-serif");
+// $mdc-typography-styles-button: (
+//  font-size: 14px,
+//  font-weight: bold,
+// );
+// $mdc-typography-styles-headline6: (
+//  font-size: 20px,
+// );
+//$mdc-shape-small-component-radius: 16px;
+
+// Import global Material Theming variables
+@import "my-theme";
 
 // Imports the Styles for each Material Component
 @import "@material/button/mdc-button";
