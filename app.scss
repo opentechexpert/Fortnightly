@@ -129,3 +129,12 @@ $card-secondary-baseline: 16px;
   font-style: normal;
   @include mdc-button-container-fill-color(#6B38FB);
 }
+
+svg {
+  margin-top: 12px;
+}
+
+.mdc-top-app-bar__search-icon {
+  right: 0;
+  text-decoration: none;
+}
