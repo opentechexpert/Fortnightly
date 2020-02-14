@@ -71,7 +71,10 @@ $card-text-label-baseline: 16px;
 
 .adopt-a-pup-card__overline {
   margin: 0 16px;
+  line-height: 1rem !important;
   @include mdc-typography(overline);
+  text-transform: uppercase;
+  margin-top: 12px;
 //@include mdc-typography-baseline-bottom(-$card-text-label-baseline);
 }
 
@@ -82,6 +85,7 @@ $card-secondary-baseline: 16px;
   @include mdc-typography(body2);
   @include mdc-typography-baseline-top(24px);
   @include mdc-typography-baseline-bottom(-$card-secondary-baseline);
+  line-height: 1.3rem !important;
 }
 
 .adopt-a-pup--fixed-adjust {
