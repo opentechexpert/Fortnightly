@@ -64,7 +64,7 @@ $card-text-label-baseline: 16px;
 
 .adopt-a-pup-card__text-label {
   margin: 0 16px;
-  @include mdc-typography(headline6);
+  @include mdc-typography(headline5);
   @include mdc-typography-baseline-top(32px);
 //@include mdc-typography-baseline-bottom(-$card-text-label-baseline);
 }
