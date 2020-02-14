@@ -5,36 +5,48 @@
 /*  Typography */
 // To change your theme's typography, we recommend importing a font from Google Fonts and setting the global font-family https://fonts.google.com
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700i,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,700&display=swap');
+
 $mdc-typography-font-family: unquote("Merriweather, sans-serif");
+
 $mdc-typography-styles-button: (
  font-size: 14px,
  font-weight: bold,
 );
 
 $mdc-typography-styles-headline1: (
- font-size: 20px,
+ font-size: 96px,
+ font-weight: 900,
+ font-style: italic,
 );
 
 $mdc-typography-styles-headline2: (
- font-size: 20px,
+ font-family: 'Libre Franklin', sans-serif, 
+ font-size: 60px,
+ font-weight: 300,
 );
 
 $mdc-typography-styles-headline3: (
- font-size: 20px,
+ font-size: 48px,
+  font-weight: 900,
+ font-style: italic,
 );
 
 $mdc-typography-styles-headline4: (
- font-size: 20px,
+ font-family: 'Libre Franklin', sans-serif, 
+ font-size: 34px,
 );
 
 $mdc-typography-styles-headline5: (
- font-size: 20px,
+ font-family: 'Libre Franklin', sans-serif, 
+ font-size: 24px,
 );
 
 $mdc-typography-styles-headline6: (
  font-size: 20px,
+ font-weight: 700,
+ font-style: italic,
 );
 
 
@@ -43,8 +55,8 @@ $mdc-typography-styles-headline6: (
 /* Shape */
 // The shapes of small, medium, and large components can be themed by overriding the default values. We recommend using our shape customization tool to help you pick your radius values. https://material.io/design/shape/about-shape.html#shape-customization-tool
 
-$mdc-shape-small-component-radius: 16px;
-$mdc-shape-medium-component-radius: 4px;
+$mdc-shape-small-component-radius: 0px;
+$mdc-shape-medium-component-radius: 0px;
 $mdc-shape-large-component-radius: 0px;
 
 
