@@ -34,8 +34,10 @@ body {
 }
 
 .adopt-a-pup-tab {
-  @include mdc-tab-text-label-color(white);
-  @include mdc-tab-icon-color(white);
+  @include mdc-tab-text-label-color(black);
+  @include mdc-tab-icon-color(black);
+  @include mdc-typography(body2);
+  font-style: normal;
 
   .mdc-tab__ripple {
     @include mdc-states(white);
@@ -43,7 +45,7 @@ body {
 }
 
 .adopt-a-pup-tab-indicator {
-  @include mdc-tab-indicator-underline-color(white);
+  @include mdc-tab-indicator-underline-color(black);
 }
 
 .adopt-a-pup-puppers {
@@ -121,4 +123,9 @@ $card-secondary-baseline: 16px;
   @include mdc-typography(caption);
   @include mdc-typography-baseline-top(24px);
   @include mdc-typography-baseline-bottom(-$card-text-label-baseline);
+}
+
+.mdc-button {
+  font-style: normal;
+  @include mdc-button-container-fill-color(#6B38FB);
 }
