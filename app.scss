@@ -69,6 +69,12 @@ $card-text-label-baseline: 16px;
 //@include mdc-typography-baseline-bottom(-$card-text-label-baseline);
 }
 
+.adopt-a-pup-card__overline {
+  margin: 0 16px;
+  @include mdc-typography(overline);
+//@include mdc-typography-baseline-bottom(-$card-text-label-baseline);
+}
+
 $card-secondary-baseline: 16px;
 
 .adopt-a-pup-card__secondary {
