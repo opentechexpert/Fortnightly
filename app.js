@@ -36,77 +36,77 @@ textFields.forEach(tf => {
 
 // const chipSet = new MDCChipSet(chipSetEl);
 
-const populateStates = () => {
-  setTimeout(() => {
-    states.forEach(state => {
-      const option = document.createElement('option');
-      option.classList.add('mdc-list-item');
-      option.setAttribute('data-value', state.abbreviation);
-      option.innerText = state.name;
-      adoptFormStateSelect.appendChild(option);
-    });
-  });
-}
-populateStates();
+// const populateStates = () => {
+//   setTimeout(() => {
+//     states.forEach(state => {
+//       const option = document.createElement('option');
+//       option.classList.add('mdc-list-item');
+//       option.setAttribute('data-value', state.abbreviation);
+//       option.innerText = state.name;
+//       adoptFormStateSelect.appendChild(option);
+//     });
+//   });
+// }
+// populateStates();
 
-let currentAdoptCardForm = null;
-const animatingClass = 'adopt-form__animating-container--animating';
-const animatingContainerClass = 'adopt-form__animating-container';
-const adoptFormHiddenClass = 'adopt-form--hidden';
-const adoptForm = document.querySelector('.adopt-form');
-const adoptFormButtons = document.querySelectorAll('.adopt-form__button');
+// let currentAdoptCardForm = null;
+// const animatingClass = 'adopt-form__animating-container--animating';
+// const animatingContainerClass = 'adopt-form__animating-container';
+// const adoptFormHiddenClass = 'adopt-form--hidden';
+// const adoptForm = document.querySelector('.adopt-form');
+// const adoptFormButtons = document.querySelectorAll('.adopt-form__button');
 
-const removeForm = (card) => {
-  const animatingAdoptForm = card.querySelector(`.${animatingContainerClass}`);
-  const cardActions = card.querySelector('.mdc-card__actions');
-  cardActions.querySelector('.adopt-form__button-text').innerText = 'Adopt';
-  cardActions.querySelector('.adopt-form__button-icon').innerText = 'pets';
+// const removeForm = (card) => {
+//   const animatingAdoptForm = card.querySelector(`.${animatingContainerClass}`);
+//   const cardActions = card.querySelector('.mdc-card__actions');
+//   cardActions.querySelector('.adopt-form__button-text').innerText = 'Adopt';
+//   cardActions.querySelector('.adopt-form__button-icon').innerText = 'pets';
 
-  animatingAdoptForm.classList.add(animatingClass);
-  setTimeout(() => {
-    if (!card) return;
-    card.removeChild(adoptForm);
-    document.body.appendChild(adoptForm);
-    adoptForm.classList.add(adoptFormHiddenClass);
-  }, 200);
-}
+//   animatingAdoptForm.classList.add(animatingClass);
+//   setTimeout(() => {
+//     if (!card) return;
+//     card.removeChild(adoptForm);
+//     document.body.appendChild(adoptForm);
+//     adoptForm.classList.add(adoptFormHiddenClass);
+//   }, 200);
+// }
 
-const addForm = (card) => {
-  const cardActions = card.querySelector('.mdc-card__actions');
-  adoptForm.classList.remove(adoptFormHiddenClass);
-  requestAnimationFrame(() => {
-    card.insertBefore(adoptForm, cardActions);
-    cardActions.querySelector('.adopt-form__button-text').innerText = 'Send Info';
-    cardActions.querySelector('.adopt-form__button-icon').innerText = 'send';
-    const animatingAdoptForm = card.querySelector(`.${animatingContainerClass}`);
+// const addForm = (card) => {
+//   const cardActions = card.querySelector('.mdc-card__actions');
+//   adoptForm.classList.remove(adoptFormHiddenClass);
+//   requestAnimationFrame(() => {
+//     card.insertBefore(adoptForm, cardActions);
+//     cardActions.querySelector('.adopt-form__button-text').innerText = 'Send Info';
+//     cardActions.querySelector('.adopt-form__button-icon').innerText = 'send';
+//     const animatingAdoptForm = card.querySelector(`.${animatingContainerClass}`);
 
-    animatingAdoptForm.classList.add(animatingClass);
-    requestAnimationFrame(() => {
-      animatingAdoptForm.classList.remove(animatingClass);
-    });
-  });
+//     animatingAdoptForm.classList.add(animatingClass);
+//     requestAnimationFrame(() => {
+//       animatingAdoptForm.classList.remove(animatingClass);
+//     });
+//   });
   
-}
+// }
 
-const handleAdoptFormClick = (e) => {
-  // not supported by IE11
-  const card = e.target.closest('.mdc-card');
+// const handleAdoptFormClick = (e) => {
+//   // not supported by IE11
+//   const card = e.target.closest('.mdc-card');
 
-  if (currentAdoptCardForm) {
-    removeForm(currentAdoptCardForm);
-    if (currentAdoptCardForm === card) {
-      currentAdoptCardForm = null;
-      return;
-    };
-  }
+//   if (currentAdoptCardForm) {
+//     removeForm(currentAdoptCardForm);
+//     if (currentAdoptCardForm === card) {
+//       currentAdoptCardForm = null;
+//       return;
+//     };
+//   }
 
-  currentAdoptCardForm = card;
-  addForm(currentAdoptCardForm);
-}
+//   currentAdoptCardForm = card;
+//   addForm(currentAdoptCardForm);
+// }
 
-adoptFormButtons.forEach(adoptFormButton => {
-  adoptFormButton.addEventListener('click', handleAdoptFormClick);
-});
+// adoptFormButtons.forEach(adoptFormButton => {
+//   adoptFormButton.addEventListener('click', handleAdoptFormClick);
+// });
 
 
 
@@ -118,8 +118,7 @@ const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 
 topAppBar.setScrollTarget(document.querySelector('.mdc-drawer-app-content'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
-  //drawer.open = !drawer.open;
-  alert("hi!")
+  drawer.open = !drawer.open;
 });
 
 const listEl = document.querySelector('.mdc-drawer .mdc-list');

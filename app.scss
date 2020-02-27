@@ -34,6 +34,11 @@ body {
   width: 100%;
 }
 
+.fornightly-navigation {
+  @include mdc-typography(headline5);
+  @include scrim-fill-color(white);
+}
+
 .adopt-a-pup-tab {
   @include mdc-tab-text-label-color(black);
   @include mdc-tab-icon-color(black);
