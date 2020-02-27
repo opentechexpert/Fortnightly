@@ -20,14 +20,14 @@ tabBar.listen('MDCTabBar:activated', (activatedEvent) => {
 });
 
 /* form code */
-const selectElement = document.querySelector('.mdc-select');
-const textFields = document.querySelectorAll('.mdc-text-field');
-const adoptFormStateSelect = document.querySelector('.adopt-form__states');
-const chipSetEl = document.querySelector('.mdc-chip-set');
+// const selectElement = document.querySelector('.mdc-select');
+// const textFields = document.querySelectorAll('.mdc-text-field');
+// const adoptFormStateSelect = document.querySelector('.adopt-form__states');
+// const chipSetEl = document.querySelector('.mdc-chip-set');
 
-textFields.forEach(tf => {
-  const textField = new MDCTextField(tf);
-});
+// textFields.forEach(tf => {
+//   const textField = new MDCTextField(tf);
+// });
 
 
 
@@ -116,7 +116,7 @@ textFields.forEach(tf => {
 
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 
-topAppBar.setScrollTarget(document.querySelector('.mdc-drawer-app-content'));
+topAppBar.setScrollTarget(document.querySelector('.adopt-a-pup-body'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
   drawer.open = !drawer.open;
 });
