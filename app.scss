@@ -35,7 +35,9 @@ body {
 }
 
 
-
+.mdc-list {
+  @include single-line-height(64px);	
+}
 
 
 .adopt-a-pup-tab {
@@ -45,7 +47,7 @@ body {
   font-style: normal;
 
   .mdc-tab__ripple {
-    @include mdc-states(white);
+    @include mdc-states(gray);
   }
 }
 

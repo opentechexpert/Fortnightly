@@ -116,7 +116,7 @@ tabBar.listen('MDCTabBar:activated', (activatedEvent) => {
 
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 
-topAppBar.setScrollTarget(document.querySelector('.adopt-a-pup-body'));
+// topAppBar.setScrollTarget(document.querySelector('.adopt-a-pup-body'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
   drawer.open = !drawer.open;
 });
