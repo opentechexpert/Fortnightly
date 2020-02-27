@@ -34,12 +34,11 @@ body {
   width: 100%;
 }
 
-.fortnightly-navigation .mdc-list .mdc-list-item .mdc-drawer__content {
-  @include mdc-typography(headline5);
+.mdc-list-item {
+  @include mdc-typography(overline);
 }
 
-.mdc-drawer {
-}
+
 
 .adopt-a-pup-tab {
   @include mdc-tab-text-label-color(black);
