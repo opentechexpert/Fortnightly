@@ -36,7 +36,9 @@ body {
 
 
 
-
+.drawer-close-icon {
+  text-decoration: none;
+}
 
 .adopt-a-pup-tab {
   @include mdc-tab-text-label-color(black);
