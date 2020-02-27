@@ -103,3 +103,9 @@ const handleAdoptFormClick = (e) => {
 adoptFormButtons.forEach(adoptFormButton => {
   adoptFormButton.addEventListener('click', handleAdoptFormClick);
 });
+
+
+const drawer = drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+topAppBar.listen('MDCTopAppBar:nav', () => {
+  drawer.open = !drawer.open;
+});
