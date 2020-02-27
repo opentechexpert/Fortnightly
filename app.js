@@ -28,10 +28,13 @@ const chipSetEl = document.querySelector('.mdc-chip-set');
 textFields.forEach(tf => {
   const textField = new MDCTextField(tf);
 });
-const mdcSelect = new MDCSelect(selectElement);
 
 
-const chipSet = new MDCChipSet(chipSetEl);
+
+// const mdcSelect = new MDCSelect(selectElement);
+
+
+// const chipSet = new MDCChipSet(chipSetEl);
 
 const populateStates = () => {
   setTimeout(() => {
@@ -113,13 +116,14 @@ adoptFormButtons.forEach(adoptFormButton => {
 
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 
-topAppBar.setScrollTarget(document.getElementById('.adopt-a-pup-body'));
+topAppBar.setScrollTarget(document.querySelector('.mdc-drawer-app-content'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
-  drawer.open = !drawer.open;
+  //drawer.open = !drawer.open;
+  alert("hi!")
 });
 
 const listEl = document.querySelector('.mdc-drawer .mdc-list');
-const mainContentEl = document.querySelector('.adopt-a-pup-body');
+const mainContentEl = document.querySelector('.mdc-drawer-app-content');
 
 listEl.addEventListener('click', (event) => {
   drawer.open = false;
