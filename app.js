@@ -3,6 +3,7 @@ import {MDCTabBar} from '@material/tab-bar';
 import {MDCTextField} from '@material/textfield';
 import {MDCSelect} from '@material/select';
 import {MDCChipSet} from '@material/chips';
+import {MDCDrawer} from "@material/drawer";
 import states from './states.json';
 
 const topAppBar = new MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
@@ -105,7 +106,26 @@ adoptFormButtons.forEach(adoptFormButton => {
 });
 
 
-const drawer = drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+
+
+
+
+
+const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+
+topAppBar.setScrollTarget(document.getElementById('.adopt-a-pup-body'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
   drawer.open = !drawer.open;
 });
+
+const listEl = document.querySelector('.mdc-drawer .mdc-list');
+const mainContentEl = document.querySelector('.adopt-a-pup-body');
+
+listEl.addEventListener('click', (event) => {
+  drawer.open = false;
+});
+
+document.body.addEventListener('MDCDrawer:closed', () => {
+  mainContentEl.querySelector('input, button').focus();
+});
+
