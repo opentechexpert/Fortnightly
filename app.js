@@ -21,7 +21,7 @@ const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'
 iconButtonRipple.unbounded = true;
 
 
-MDCRipple.attachTo(document.querySelector('.mdc-card'));
+MDCRipple.attachTo(document.querySelector('.adopt-a-pup-card'));
 
 /* form code */
 // const selectElement = document.querySelector('.mdc-select');
