@@ -161,3 +161,12 @@ svg {
   right: 0;
   text-decoration: none;
 }
+
+
+.mdc-drawer .mdc-list-item {
+    font-size: inherit;
+    font-weight: 600;
+    text-decoration: inherit;
+    text-transform: inherit;
+    @include mdc-typography(headline4);
+}
