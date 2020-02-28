@@ -5,6 +5,7 @@ import {MDCSelect} from '@material/select';
 import {MDCChipSet} from '@material/chips';
 import {MDCDrawer} from "@material/drawer";
 import states from './states.json';
+import {MDCRipple} from '@material/ripple';
 
 const topAppBar = new MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
 const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
@@ -18,6 +19,9 @@ tabBar.listen('MDCTabBar:activated', (activatedEvent) => {
     }
   });
 });
+
+const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+iconButtonRipple.unbounded = true;
 
 /* form code */
 // const selectElement = document.querySelector('.mdc-select');
@@ -116,14 +120,13 @@ tabBar.listen('MDCTabBar:activated', (activatedEvent) => {
 
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 
-// topAppBar.setScrollTarget(document.querySelector('.adopt-a-pup-body'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
   drawer.open = !drawer.open;
 });
 
 const listEl = document.querySelector('.mdc-drawer .mdc-list');
 const mainContentEl = document.querySelector('.mdc-drawer-app-content');
-const drawerClose = document.querySelector('.drawer-close-icon')
+const drawerCloser = document.querySelector('.drawer-close-icon')
 
 listEl.addEventListener('click', (event) => {
   drawer.open = false;
@@ -131,5 +134,7 @@ listEl.addEventListener('click', (event) => {
 
 document.body.addEventListener('MDCDrawer:closed', () => {
   mainContentEl.querySelector('input, button').focus();
+  drawerCloser.querySelector('input, button').focus();
+  console.log(hi);
 });
 
