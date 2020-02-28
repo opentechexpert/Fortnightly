@@ -103,6 +103,12 @@ $card-secondary-baseline: 16px;
   padding-top: 112px;
 }
 
+.mdc-card {
+  @include ripple.surface;
+  @include ripple.radius-bounded;
+  @include ripple.states;
+}
+
 .adopt-form {
   padding: 0 16px 16px;
   overflow: hidden;
