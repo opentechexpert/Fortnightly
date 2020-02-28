@@ -1,8 +1,5 @@
 import {MDCTopAppBar} from '@material/top-app-bar';
 import {MDCTabBar} from '@material/tab-bar';
-import {MDCTextField} from '@material/textfield';
-import {MDCSelect} from '@material/select';
-import {MDCChipSet} from '@material/chips';
 import {MDCDrawer} from "@material/drawer";
 import states from './states.json';
 import {MDCRipple} from '@material/ripple';
@@ -132,9 +129,11 @@ listEl.addEventListener('click', (event) => {
   drawer.open = false;
 });
 
+drawerCloser.addEventListener('click', (event) => {
+  drawer.open = false;
+});
+
 document.body.addEventListener('MDCDrawer:closed', () => {
   mainContentEl.querySelector('input, button').focus();
-  drawerCloser.querySelector('input, button').focus();
-  console.log(hi);
 });
 
