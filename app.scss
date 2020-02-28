@@ -22,6 +22,7 @@
 @import "@material/typography/mixins";
 @import "@material/drawer/mdc-drawer";
 @import "@material/icon-button/mdc-icon-button";
+@use "@material/ripple";
 
 body {
   margin: 0;
@@ -71,6 +72,9 @@ $card-text-label-baseline: 16px;
 
 .adopt-a-pup-card .mdc-card__actions {
   margin-top: auto;
+  @include ripple.surface;
+  @include ripple.radius-bounded;
+  @include ripple.states;
 }
 
 .adopt-a-pup-card__text-label {
@@ -103,11 +107,7 @@ $card-secondary-baseline: 16px;
   padding-top: 112px;
 }
 
-.mdc-card {
-  @include ripple.surface;
-  @include ripple.radius-bounded;
-  @include ripple.states;
-}
+
 
 .adopt-form {
   padding: 0 16px 16px;

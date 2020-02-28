@@ -5,6 +5,7 @@ dependencies:
   '@material/drawer': 0.41.1
   '@material/icon-button': 0.41.0
   '@material/layout-grid': 0.41.0
+  '@material/ripple': 0.41.0
   '@material/select': 0.41.0
   '@material/tab': 0.41.0
   '@material/tab-bar': 0.41.0
@@ -5601,6 +5602,7 @@ specifiers:
   '@material/drawer': ^0.41.0
   '@material/icon-button': ^0.41.0
   '@material/layout-grid': ^0.41.0
+  '@material/ripple': ^0.41.0
   '@material/select': ^0.41.0
   '@material/tab': ^0.41.0
   '@material/tab-bar': ^0.41.0

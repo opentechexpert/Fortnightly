@@ -20,6 +20,10 @@ tabBar.listen('MDCTabBar:activated', (activatedEvent) => {
 const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
 iconButtonRipple.unbounded = true;
 
+const surface = document.querySelector('.mdc-card');
+const ripple = new MDCRipple(surface);
+MDCRipple.attachTo(document.querySelector('.mdc-card'));
+
 /* form code */
 // const selectElement = document.querySelector('.mdc-select');
 // const textFields = document.querySelectorAll('.mdc-text-field');
