@@ -173,5 +173,5 @@ svg {
 .mdc-list-item--activated {
   @include mdc-typography(subtitle1);
   font-weight: 700 !important;
-  item-primary-text-ink-color(black);
+  
 }
