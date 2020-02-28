@@ -72,9 +72,6 @@ $card-text-label-baseline: 16px;
 
 .adopt-a-pup-card .mdc-card__actions {
   margin-top: auto;
-  @include ripple.surface;
-  @include ripple.radius-bounded;
-  @include ripple.states;
 }
 
 .adopt-a-pup-card__text-label {
