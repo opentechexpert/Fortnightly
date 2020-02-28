@@ -165,8 +165,7 @@ svg {
 
 .mdc-drawer .mdc-list-item {
     font-size: inherit;
-    font-weight: 600;
     text-decoration: inherit;
     text-transform: inherit;
-    @include mdc-typography(headline4);
+    @include mdc-typography(subtitle1);
 }
