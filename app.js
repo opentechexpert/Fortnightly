@@ -123,6 +123,7 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
 
 const listEl = document.querySelector('.mdc-drawer .mdc-list');
 const mainContentEl = document.querySelector('.mdc-drawer-app-content');
+const drawerClose = document.querySelector('.drawer-close-icon')
 
 listEl.addEventListener('click', (event) => {
   drawer.open = false;
