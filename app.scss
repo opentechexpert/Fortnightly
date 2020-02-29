@@ -246,18 +246,32 @@ svg {
   }
   
   .article-author {
-    
+    display: inline-block;
+    margin: 8px 0px;
   }
   
   .author-image {
-    width: 48px;
-    height: 48px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background-image: url("https://cdn.glitch.com/62e2261a-7e39-4dae-832f-57566e5fe6b2%2Fstock-photo-barcelona-poblenou-by-michseixas-143329895.jpg?v=1581723642934");
   }
   
   .author-name {
     @include mdc-typography(body1);
+    display: inline-block;
+
+  }
+  
+  .article-text {
+    @include mdc-typography(body1);
+    margin-top: 8px;
+    
+    .firstcharacter{
+      @include mdc-typography(headline3);
+      padding-right: 2px;
+    }
   }
   
   
