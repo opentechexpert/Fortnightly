@@ -157,6 +157,10 @@ svg {
   margin-top: 12px;
 }
 
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-short-shape-radius(0px);
+}
+
 .mdc-top-app-bar__search-icon {
   right: 0;
   text-decoration: none;
@@ -253,6 +257,7 @@ svg {
   
   .author-image {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 4px;
     width: 36px;
     height: 36px;
@@ -263,6 +268,7 @@ svg {
   .author-name {
     @include mdc-typography(body1);
     display: inline-block;
+    vertical-align: middle;
 
   }
   
