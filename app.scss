@@ -221,11 +221,14 @@ svg {
     }
   }
   
+  .article-content {
+    height: auto;
+    padding: 16px;
+  }
+  
   .article-meta {
     width: 100%;
-    margin: 16px;
     height: auto;
-    background: red;
   }
   
   .article-category {
@@ -242,16 +245,21 @@ svg {
     opacity: 0.64;
   }
   
+  .article-author {
+    
+  }
+  
   .author-image {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    
-    img {
-      
-    }
-    
+    background-image: url("https://cdn.glitch.com/62e2261a-7e39-4dae-832f-57566e5fe6b2%2Fstock-photo-barcelona-poblenou-by-michseixas-143329895.jpg?v=1581723642934");
   }
+  
+  .author-name {
+    @include mdc-typography(body1);
+  }
+  
   
 
 }
