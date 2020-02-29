@@ -221,10 +221,37 @@ svg {
     }
   }
   
+  .article-meta {
+    width: 100%;
+    margin: 16px;
+    height: auto;
+    background: red;
+  }
   
+  .article-category {
+    @include mdc-typography(overline);
+    text-transform: uppercase;
+  }
   
+  .article-title {
+    @include mdc-typography(headline6);
+  }
   
-
+  .article-oneliner {
+    @include mdc-typography(subtitle2);
+    opacity: 0.64;
+  }
+  
+  .author-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    
+    img {
+      
+    }
+    
+  }
   
 
 }
