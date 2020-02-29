@@ -170,9 +170,15 @@ svg {
     @include mdc-typography(subtitle1);
 }
 
+.mdc-drawer {
+  @include mdc-drawer-scrim-fill-color(white);
+  @include mdc-drawer-item-activated-text-ink-color(black);
+}
+
 
 .mdc-list {
-  @include single-line-height(64px);
+  @include mdc-list-item-primary-text-ink-color(black);
+  @include mdc-list-item-shape-radius(0px);
 }
 
 
