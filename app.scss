@@ -243,15 +243,17 @@ svg {
   .article-oneliner {
     @include mdc-typography(subtitle2);
     opacity: 0.64;
+    margin-top: 4px;
   }
   
   .article-author {
     display: inline-block;
-    margin: 8px 0px;
+    margin: 12px 0px;
   }
   
   .author-image {
     display: inline-block;
+    margin-right: 4px;
     width: 36px;
     height: 36px;
     border-radius: 50%;
