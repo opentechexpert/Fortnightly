@@ -168,11 +168,14 @@ svg {
     text-decoration: inherit;
     text-transform: inherit;
     @include mdc-typography(subtitle1);
+    font-size: 18px;
 }
 
 .mdc-drawer {
   @include mdc-drawer-scrim-fill-color(white);
   @include mdc-drawer-item-activated-text-ink-color(black);
+  @include mdc-drawer-activated-overlay-color(rgba(193, 66, 66, 0));
+  @include mdc-drawer-width(320px);
 }
 
 
@@ -187,4 +190,10 @@ svg {
   font-weight: 700 !important;
   color: black !important;
   
+  
 }
+
+.mdc-top-app-bar__title {
+  padding-left: 8px;
+}
+
