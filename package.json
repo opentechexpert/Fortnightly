@@ -42,7 +42,8 @@
     "@material/typography": "^0.41.0",
     "@material/drawer": "^0.41.0",
     "@material/icon-button": "^0.41.0",
-    "@material/ripple": "^0.41.0"
+    "@material/ripple": "^0.41.0",
+    "@material/list": "^0.41.0"
   },
   "engines": {
     "node": "10.x"

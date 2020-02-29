@@ -170,9 +170,11 @@ svg {
     @include mdc-typography(subtitle1);
 }
 
+
 .mdc-list {
- @include single-line-height(64px);
+  @include single-line-height(64px);
 }
+
 
 .mdc-list-item--activated {
   @include mdc-typography(subtitle1);
