@@ -301,9 +301,113 @@ svg {
       padding-right: 2px;
     }
   }
-  
-  
-
 }
  
 
+
+
+@media only screen and (min-width: 600px) {
+  
+  .article-page {
+
+  
+  .adopt-a-pup-top-navigation {
+    display: none;
+  }
+  
+  .adopt-a-pup--fixed-adjust {
+      padding-top: 56px; 
+  }
+  
+  .article-image {
+    max-width: 880px;
+    height: auto;
+    margin: auto;
+    
+    img {
+      width: 100%;
+    }
+  }
+  
+  .article-content {
+    height: auto;
+    padding: 16px;
+    
+    margin: auto;
+  }
+  
+  .article-meta {
+    width: 100%;
+    height: auto;
+    max-width: 880px;
+  }
+  
+  .article-category {
+    @include mdc-typography(overline);
+    text-transform: uppercase;
+  }
+  
+  .article-title {
+    @include mdc-typography(headline6);
+    letter-spacing: 0;
+  }
+  
+  .article-oneliner {
+    @include mdc-typography(subtitle2);
+    opacity: 0.64;
+    margin-top: 4px;
+  }
+  
+  .article-author {
+    display: inline-block;
+    margin: 16px 0px;
+  }
+  
+  .author-image {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url("https://cdn.glitch.com/62e2261a-7e39-4dae-832f-57566e5fe6b2%2Fstock-photo-barcelona-poblenou-by-michseixas-143329895.jpg?v=1581723642934");
+    background-size: cover;
+  }
+  
+  .author-name {
+    @include mdc-typography(body1);
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 2px solid #6B38FB;
+
+  }
+  
+  .author-by {
+    display: inline-block;
+    @include mdc-typography(subtitle1);
+    opacity: 0.64;
+    margin: 0px 4px;
+    text-decoration: none;
+    border-bottom: 0px solid #6B38FB;
+    
+    
+  }
+  
+  .article-text {
+    @include mdc-typography(body1);
+    margin-top: 16px;
+    max-width: 800px;
+    
+    .firstcharacter{
+      @include mdc-typography(headline3);
+      padding-right: 2px;
+    }
+  }
+}  
+   
+ 
+}
+  
+  
+  
+  
