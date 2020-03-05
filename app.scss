@@ -242,6 +242,7 @@ svg {
   
   .article-title {
     @include mdc-typography(headline6);
+    letter-spacing: 0;
   }
   
   .article-oneliner {
@@ -252,7 +253,7 @@ svg {
   
   .article-author {
     display: inline-block;
-    margin: 12px 0px;
+    margin: 16px 0px;
   }
   
   .author-image {
@@ -263,12 +264,14 @@ svg {
     height: 36px;
     border-radius: 50%;
     background-image: url("https://cdn.glitch.com/62e2261a-7e39-4dae-832f-57566e5fe6b2%2Fstock-photo-barcelona-poblenou-by-michseixas-143329895.jpg?v=1581723642934");
+    background-size: cover;
   }
   
   .author-name {
     @include mdc-typography(body1);
     display: inline-block;
     vertical-align: middle;
+    border-bottom: 2px solid #6B38FB;
 
   }
   
@@ -276,7 +279,11 @@ svg {
     display: inline-block;
     @include mdc-typography(subtitle1);
     opacity: 0.64;
-    margin-right: 4px;
+    margin: 0px 4px;
+    text-decoration: none;
+    border-bottom: 0px solid #6B38FB;
+    
+    
   }
   
   .article-text {
