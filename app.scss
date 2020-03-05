@@ -275,6 +275,8 @@ svg {
   .author-by {
     display: inline-block;
     @include mdc-typography(subtitle1);
+    opacity: 0.64;
+    margin-right: 4px;
   }
   
   .article-text {
