@@ -159,12 +159,12 @@ svg {
 
 .mdc-top-app-bar {
   @include mdc-top-app-bar-short-shape-radius(0px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
 }
 
 .mdc-top-app-bar.mdc-top-app-bar--short-collapsed {
     border-radius: 0 0 0px 0;
-  border-bottom: 0px solid rgba(0, 0, 0, 0.12);
+
 }
 
 .mdc-top-app-bar__search-icon {
@@ -297,7 +297,7 @@ svg {
     margin-top: 16px;
     
     .firstcharacter{
-      @include mdc-typography(headline3);
+      @include mdc-typography(headline1);
       padding-right: 2px;
     }
   }
