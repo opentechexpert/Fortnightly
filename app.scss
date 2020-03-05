@@ -297,7 +297,7 @@ svg {
     margin-top: 16px;
     
     .firstcharacter{
-      @include mdc-typography(headline1);
+      @include mdc-typography(headline3);
       padding-right: 2px;
     }
   }
