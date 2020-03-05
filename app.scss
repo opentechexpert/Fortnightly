@@ -272,9 +272,14 @@ svg {
 
   }
   
+  .author-by {
+    display: inline-block;
+    @include mdc-typography(subtitle1);
+  }
+  
   .article-text {
     @include mdc-typography(body1);
-    margin-top: 8px;
+    margin-top: 16px;
     
     .firstcharacter{
       @include mdc-typography(headline3);
