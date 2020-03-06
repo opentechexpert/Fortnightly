@@ -159,6 +159,10 @@ svg {
   margin-top: 12px;
 }
 
+.mdc-top-app-bar--short .mdc-top-app-bar__section {
+    padding: 0px;
+}
+
 .mdc-top-app-bar {
   @include mdc-top-app-bar-short-shape-radius(0px);
 
