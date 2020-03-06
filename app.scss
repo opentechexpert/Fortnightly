@@ -331,7 +331,7 @@ svg {
   
   .article-content {
     height: auto;
-    padding: 16px;
+    padding: 0px;
     
     margin: auto;
   }
@@ -340,6 +340,7 @@ svg {
     width: 100%;
     height: auto;
     max-width: 880px;
+    margin: auto;
   }
   
   .article-category {
@@ -395,8 +396,8 @@ svg {
   
   .article-text {
     @include mdc-typography(body1);
-    margin-top: 16px;
     max-width: 800px;
+    margin: 24px auto;
     
     .firstcharacter{
       @include mdc-typography(headline3);
