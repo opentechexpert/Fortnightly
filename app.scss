@@ -31,7 +31,6 @@ body {
 .adopt-a-pup-top-navigation {
   display: flex;
   position: relative;
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -159,8 +158,8 @@ svg {
   margin-top: 12px;
 }
 
-.mdc-top-app-bar--short .mdc-top-app-bar__section {
-    padding: 0px;
+.mdc-top-app-bar__section {
+   padding: 8px 12px;
 }
 
 .mdc-top-app-bar {
